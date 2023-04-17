@@ -55,7 +55,7 @@ h3 {
 }
 
 input, 
-button{
+button {
   outline: none;
 }
 
@@ -85,7 +85,7 @@ button{
   text-transform: uppercase;
 }
 
-.task{
+.task {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
