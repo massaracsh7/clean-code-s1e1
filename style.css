@@ -61,7 +61,9 @@ button {
   outline: none;
 }
 
-.btn {
+.btn, 
+.btn--edit, 
+.btn--delete {
   background: none;
   border: 0px;
   color: #888;
@@ -71,8 +73,14 @@ button {
   cursor: pointer;
 }
 
-.btn:hover {
+.btn:hover,
+.btn--edit:hover,
+.btn--delete:hover {
   color: #3a3a3a;
+}
+
+.btn--delete {
+  height: 32px;
 }
 
 /* Heading */
