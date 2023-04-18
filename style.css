@@ -5,42 +5,44 @@
   font-family: Lato, sans-serif;
 }
 
-.matrix {
+.header {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
 
-.matrix .image {
+.header__image {
   width: 100%;
 }
 
-.matrix .more-inf {
+.header__link {
   font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
 
-  .matrix {
+  .header {
     text-align: center;
   }
 
 }
 
-.main-table {
+.main {
   display: block;
   width: 500px;
   margin: 0 auto 0;
 }
 
-.task {
+.add__input,
+.task__input,
+.task__label {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
 }
 
-.task-row-wrapper {
+.add__wrapper {
   display: flex;
 }
 
@@ -74,8 +76,8 @@ button {
 }
 
 /* Heading */
-.title,
-.add-label {
+.task__title,
+.add__label {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -85,7 +87,8 @@ button {
   text-transform: uppercase;
 }
 
-.task {
+.add__input, 
+.task__input {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -98,22 +101,23 @@ button {
   color: #888;
 }
 
-.task:focus {
+.add__input:focus, 
+.task__input:focus {
   color: #333;
 }
 
 /* New Task */
-.add-label {
+.add__label {
   display: block;
   margin: 0 0 20px;
 }
 
-.add-task {
+.add__input {
   width: 318px;
 }
 
 /* Task list */
-.item {
+.task__item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -122,47 +126,47 @@ button {
   align-items: center;
 }
 
-.checkbox {
+.task__checkbox {
   margin: 0 10px;
 }
 
-.label-task {
+.task__label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 
-.task {
+.task__input {
   width: 226px;
 }
 
-.img-delete {
+.btn__image {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.img-delete:hover {
+.btn__image:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-.label-completed {
+.task__label--complete {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-.task {
+.task__input {
   display: none;
 }
 
-.edit-task {
+.task__input--edit {
   display: inline-block;
   width: 224px;
 }
 
-.edit-label {
+.task__label--edit {
   display: none;
 }
